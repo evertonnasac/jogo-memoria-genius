@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+
+button{
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+    
+    
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.container{
+    display: flex;
+    /*align-items: center;*/
+    margin-left: 10px;
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.main-game{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.genius{
+    display: grid;
+    grid-template-areas: 'gblue gyellow' 
+    'gred ggreen' ;
+    gap: 10px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+    background-color: black
+}
+
+
+.fragment:hover{
+ cursor: pointer;
+ /*transform: scale(1.02);
+ opacity: 1;*/
+
+}
+
+.green{
+    background-color: green;
+    grid-area:ggreen;
+    border-bottom-right-radius: 100%;
+    opacity: 0.5;
+}
+
+.yellow{
+    background-color: yellow;
+    grid-area: gyellow;
+    border-top-right-radius: 100%;
+    opacity: 0.5;
+}
+
+.red{
+    background-color: red;
+    grid-area: gred;
+    border-bottom-left-radius: 100% ;
+    opacity: 0.5;
+}
+
+.blue{
+    background-color:blue;
+    grid-area: gblue;
+    border-top-left-radius: 100%;
+    opacity: 0.5;
+}
+
+
+
+.selected{
+ opacity: 1;
+ transform: scale(1.02);
+}
+
